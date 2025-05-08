@@ -1,0 +1,31 @@
+TRADE_ID,TRADE_DATE,TRADER_NAME,DESK,TICKER,QUANTITY,PRICE,TRADE_TYPE,NOTES
+1001,2024-03-01,John Smith,Equity Desk,AAPL,100,175.50,BUY,Initiated position based on strong earnings report
+1002,2024-03-01,John Smith,Equity Desk,AAPL,100,178.25,SELL,Taking profits after 1.5% gain
+1003,2024-03-01,Sarah Johnson,FX Desk,EUR/USD,100000,1.0850,BUY,Positioning for ECB rate decision
+1004,2024-03-01,Sarah Johnson,FX Desk,EUR/USD,100000,1.0920,SELL,Closing position after ECB announcement
+1005,2024-03-01,Michael Chen,Equity Desk,MSFT,50,405.75,BUY,Adding to position on AI momentum
+1006,2024-03-01,Michael Chen,Equity Desk,MSFT,50,408.50,SELL,Quick profit on AI news
+1007,2024-03-01,Lisa Wong,FX Desk,GBP/USD,75000,1.2650,BUY,Technical breakout signal
+1008,2024-03-01,Lisa Wong,FX Desk,GBP/USD,75000,1.2720,SELL,Target reached
+1009,2024-03-01,David Kim,Equity Desk,GOOGL,75,141.25,BUY,Strong search revenue growth
+1010,2024-03-01,David Kim,Equity Desk,GOOGL,75,142.50,SELL,Profit taking
+1011,2024-03-04,John Smith,Equity Desk,AAPL,150,176.25,BUY,Re-entering on pullback
+1012,2024-03-04,John Smith,Equity Desk,AAPL,150,179.50,SELL,Technical resistance hit
+1013,2024-03-04,Sarah Johnson,FX Desk,EUR/USD,125000,1.0880,BUY,Strong economic data
+1014,2024-03-04,Sarah Johnson,FX Desk,EUR/USD,125000,1.0950,SELL,Profit taking on data
+1015,2024-03-04,Michael Chen,Equity Desk,MSFT,75,407.25,BUY,Cloud growth acceleration
+1016,2024-03-04,Michael Chen,Equity Desk,MSFT,75,410.75,SELL,Target reached
+1017,2024-03-04,Lisa Wong,FX Desk,GBP/USD,100000,1.2680,BUY,BOE rate decision
+1018,2024-03-04,Lisa Wong,FX Desk,GBP/USD,100000,1.2750,SELL,Position closed after decision
+1019,2024-03-04,David Kim,Equity Desk,GOOGL,100,142.25,BUY,Ad revenue growth
+1020,2024-03-04,David Kim,Equity Desk,GOOGL,100,144.50,SELL,Technical target hit
+1021,2024-03-05,John Smith,Equity Desk,AAPL,200,177.50,BUY,Strong iPhone sales
+1022,2024-03-05,John Smith,Equity Desk,AAPL,200,180.25,SELL,Profit taking
+1023,2024-03-05,Sarah Johnson,FX Desk,EUR/USD,150000,1.0900,BUY,ECB minutes release
+1024,2024-03-05,Sarah Johnson,FX Desk,EUR/USD,150000,1.0980,SELL,Position closed
+1025,2024-03-05,Michael Chen,Equity Desk,MSFT,100,409.50,BUY,AI partnership news
+1026,2024-03-05,Michael Chen,Equity Desk,MSFT,100,413.25,SELL,Target reached
+1027,2024-03-05,Lisa Wong,FX Desk,GBP/USD,125000,1.2700,BUY,UK GDP data
+1028,2024-03-05,Lisa Wong,FX Desk,GBP/USD,125000,1.2780,SELL,Position closed
+1029,2024-03-05,David Kim,Equity Desk,GOOGL,125,143.75,BUY,Search market share
+1030,2024-03-05,David Kim,Equity Desk,GOOGL,125,146.25,SELL,Technical target hit 

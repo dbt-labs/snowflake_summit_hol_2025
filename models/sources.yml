@@ -1,0 +1,103 @@
+version: 2
+
+sources:
+  - name: stock_data
+    database: STOCK_TRACKING_US_STOCK_PRICES_BY_DAY
+    schema: STOCK
+    tables:
+      - name: US_STOCK_METRICS
+        description: "US stock market trading data"
+        columns:
+          - name: RUN_DATE
+            description: "Date of the stock metrics"
+            tests:
+              - not_null
+          - name: TICKER
+            description: "Stock ticker symbol"
+            tests:
+              - not_null
+          - name: OPEN
+            description: "Opening price"
+          - name: HIGH
+            description: "Highest price"
+          - name: LOW
+            description: "Lowest price"
+          - name: CLOSE
+            description: "Closing price"
+          - name: VOLUME
+            description: "Trading volume"
+
+  - name: forex_data
+    database: FOREX_TRACKING_CURRENCY_EXCHANGE_RATES_BY_DAY
+    schema: STOCK
+    tables:
+      - name: FOREX_METRICS
+        description: "Foreign exchange rates data"
+        columns:
+          - name: RUN_DATE
+            description: "Date of the forex metrics"
+            tests:
+              - not_null
+          - name: CURRENCY_PAIR_NAME
+            description: "Currency pair (e.g., EUR/USD)"
+            tests:
+              - not_null
+          - name: OPEN
+            description: "Opening rate"
+          - name: HIGH
+            description: "Highest rate"
+          - name: LOW
+            description: "Lowest rate"
+          - name: CLOSE
+            description: "Closing rate"
+
+  - name: trading_data
+    database: analytics
+    schema: dbt_lleon_hol
+    tables:
+      - name: trading_books
+        description: "Trading book data"
+        columns:
+          - name: TRADE_ID
+            description: "Unique identifier for the trade"
+            tests:
+              - unique
+              - not_null
+          - name: TRADE_DATE
+            description: "Date of the trade"
+            tests:
+              - not_null
+          - name: TRADER_NAME
+            description: "Name of the trader"
+          - name: DESK
+            description: "Trading desk name"
+          - name: TICKER
+            description: "Traded instrument"
+          - name: QUANTITY
+            description: "Trade quantity"
+          - name: PRICE
+            description: "Trade price"
+          - name: TRADE_TYPE
+            description: "Type of trade (BUY/SELL)"
+          - name: NOTES
+            description: "Trade notes and comments"
+
+  - name: portfolio_data
+    database: analytics
+    schema: dbt_lleon_hol
+    tables:
+      - name: weights_table
+        description: "Portfolio target allocations by region and desk"
+        columns:
+          - name: REGION
+            description: "Geographic region"
+            tests:
+              - not_null
+          - name: DESK
+            description: "Trading desk name"
+            tests:
+              - not_null
+          - name: TARGET_ALLOCATION
+            description: "Target portfolio allocation"
+            tests:
+              - not_null 
