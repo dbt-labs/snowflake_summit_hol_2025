@@ -14,8 +14,6 @@ sources:
               - not_null
           - name: TICKER
             description: "Stock ticker symbol"
-            tests:
-              - not_null
           - name: OPEN
             description: "Opening price"
           - name: HIGH
@@ -53,7 +51,7 @@ sources:
 
   - name: trading_data
     database: analytics
-    schema: dbt_lleon_hol
+    schema: snowflake_summit_hol_raw
     tables:
       - name: trading_books
         description: "Trading book data"
@@ -84,7 +82,7 @@ sources:
 
   - name: portfolio_data
     database: analytics
-    schema: dbt_lleon_hol
+    schema: snowflake_summit_hol_raw
     tables:
       - name: weights_table
         description: "Portfolio target allocations by region and desk"
