@@ -29,4 +29,3 @@ TRADE_ID,TRADE_DATE,TRADER_NAME,DESK,TICKER,QUANTITY,PRICE,TRADE_TYPE,NOTES
 1028,2024-03-05,Lisa Wong,FX Desk,GBP/USD,125000,1.2780,SELL,Position closed
 1029,2024-03-05,David Kim,Equity Desk,GOOGL,125,143.75,BUY,Search market share
 1030,2024-03-05,David Kim,Equity Desk,GOOGL,125,146.25,SELL,Technical target hit 
-1031,2024-03-06,David Kim,Equity Desk,GOOGL,120,155.75,SELL,Position closed after decision
