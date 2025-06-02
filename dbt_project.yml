@@ -68,3 +68,7 @@ models:
       # +snowflake_warehouse: VWH_DBT_HOL
       # +refresh_mode: incremental
 
+
+seeds:
+  schema: snowflake_summit_hol_raw
+  database: analytics
