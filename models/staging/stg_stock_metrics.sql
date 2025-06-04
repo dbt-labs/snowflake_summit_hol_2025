@@ -1,4 +1,8 @@
-
+{{
+    config(
+        materialized='table'
+    )
+}}
 
 with source as (
     select * from {{ source('stock_data', 'US_STOCK_METRICS') }}
