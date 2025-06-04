@@ -24,6 +24,18 @@ If you want to examine the source data we are using there are four based tables 
     1. STOCK_TRACKING_US_STOCK_PRICES_BY_DAY.STOCK.US_STOCK_METRICS
     2. FOREX_TRACKING_CURRENCY_EXCHANGE_RATES_BY_DAY.STOCK.FOREX_METRICS
 
+Example dbt Test command:
+
+    dbt test --select "source:*"
+
+Example Configuration for Source Data targets:
+
+    - name: TICKER
+        description: "Stock ticker symbol"
+        tests:
+            - not_null:
+            severity: warn
+
 Example Configuration Blocks for Dynamic Tables:
 
     {{ config(
