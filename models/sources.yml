@@ -14,6 +14,9 @@ sources:
               - not_null
           - name: TICKER
             description: "Stock ticker symbol"
+            tests:
+              - not_null:
+                  severity: error
           - name: OPEN
             description: "Opening price"
           - name: HIGH
