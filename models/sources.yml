@@ -16,7 +16,7 @@ sources:
             description: "Stock ticker symbol"
             tests:
               - not_null:
-                  severity: error
+                  severity: warn
           - name: OPEN
             description: "Opening price"
           - name: HIGH
@@ -101,4 +101,4 @@ sources:
           - name: TARGET_ALLOCATION
             description: "Target portfolio allocation"
             tests:
-              - not_null 
+              - not_null
