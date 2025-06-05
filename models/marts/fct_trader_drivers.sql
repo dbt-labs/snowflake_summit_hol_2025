@@ -1,10 +1,14 @@
-  {{ config(
-        materialized="dynamic_table",
-        target_lag="1 minutes",
-        snowflake_warehouse="transformer_coalesce",
-        refresh_mode="FULL"
-    ) }}
+<<<<<<< HEAD
 
+
+=======
+{{ config(
+    materialized="dynamic_table",
+    target_lag="1 minutes",
+    snowflake_warehouse="transformer_coalesce",
+    refresh_mode="FULL"
+) }}
+>>>>>>> c1aae88f5567882717702eab3ce2c61e60abb955
 
 with extracted_entities as (
     select * from {{ ref('int_extracted_entities') }}

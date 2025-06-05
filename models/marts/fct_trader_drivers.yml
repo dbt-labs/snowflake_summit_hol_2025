@@ -13,4 +13,8 @@ models:
       - name: signals_used
       - name: driver_percentage
         data_tests:
+<<<<<<< HEAD
           - not_null
+=======
+          - not_null
+>>>>>>> c1aae88f5567882717702eab3ce2c61e60abb955
