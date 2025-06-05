@@ -5,7 +5,7 @@
     refresh_mode="FULL"
 ) }}
 with source as (
-    select * from {{ source('stock_data', 'US_STOCK_METRICS') }}
+    select * from {{ source('stock_data', 'US_STOCK_METRICS') }} 
 ),
 
 renamed as (
@@ -23,3 +23,4 @@ renamed as (
 select * from renamed 
 where run_date >= '2024-01-01'
 and ticker is not null 
+
