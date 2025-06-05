@@ -1,0 +1,40 @@
+models:
+  - name: int_extracted_entities
+    columns:
+      - name: trade_id
+        data_tests:
+          - unique
+          - not_null
+      - name: trade_date
+        data_tests:
+          - not_null
+      - name: trader_name
+        data_tests:
+          - not_null
+      - name: desk
+        data_tests:
+          - not_null
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: quantity
+        data_tests:
+          - not_null
+      - name: price
+        data_tests:
+          - not_null
+      - name: trade_type
+        data_tests:
+          - not_null
+      - name: notes
+        data_tests:
+          - not_null
+      - name: sentiment
+        data_tests:
+          - not_null
+      - name: signal
+        data_tests:
+          - not_null
+      - name: trade_driver
+        data_tests:
+          - not_null

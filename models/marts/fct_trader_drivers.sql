@@ -1,4 +1,3 @@
-
 with extracted_entities as (
     select * from {{ ref('int_extracted_entities') }}
 ),
