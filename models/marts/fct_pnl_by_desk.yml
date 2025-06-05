@@ -1,0 +1,54 @@
+models:
+  - name: fct_pnl_by_desk
+    columns:
+      - name: desk
+        data_tests:
+          - not_null
+      - name: ticker
+        data_tests:
+          - not_null
+      - name: trade_date
+        data_tests:
+          - not_null
+      - name: region
+        data_tests:
+          - not_null
+      - name: total_trades
+        data_tests:
+          - not_null
+      - name: total_quantity
+        data_tests:
+          - not_null
+      - name: total_pnl_usd
+        data_tests:
+          - not_null
+      - name: avg_trade_size
+        data_tests:
+          - not_null
+      - name: avg_pnl_usd
+        data_tests:
+          - not_null
+      - name: avg_vs_open_performance_pct
+        data_tests:
+          - not_null
+      - name: avg_vs_close_performance_pct
+        data_tests:
+          - not_null
+      - name: avg_market_performance_pct
+        data_tests:
+          - not_null
+      - name: avg_relative_performance_pct
+        data_tests:
+          - not_null
+      - name: best_price_trades
+        data_tests:
+          - not_null
+      - name: worst_price_trades
+        data_tests:
+          - not_null
+      - name: middle_price_trades
+        data_tests:
+          - not_null
+      - name: cumulative_pnl_usd
+        data_tests:
+          - not_null
