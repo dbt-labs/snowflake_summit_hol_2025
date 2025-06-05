@@ -17,4 +17,5 @@ renamed as (
 select * from renamed 
 where 1=1 
   AND run_date >= '2024-01-01'
+  AND ticker is not null
 
