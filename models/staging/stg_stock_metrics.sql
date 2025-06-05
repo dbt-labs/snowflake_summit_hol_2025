@@ -18,6 +18,7 @@ renamed as (
         close as close_price,
         volume
     from source
+    where ticker is not null
 )
 
 select * from renamed 

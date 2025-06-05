@@ -1,0 +1,18 @@
+models:
+  - name: fct_trader_drivers
+    config:
+      materialized: dynamic_table
+      target_lag: '1 minutes'
+      snowflake_warehouse: transformer_coalesce
+    columns:
+      - name: trader_name
+        data_tests:
+          - not_null
+      - name: trade_driver
+      - name: total_trades
+        data_tests:
+          - not_null
+      - name: signals_used
+      - name: driver_percentage
+        data_tests:
+          - not_null
