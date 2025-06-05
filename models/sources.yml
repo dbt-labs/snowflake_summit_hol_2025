@@ -34,7 +34,7 @@ sources:
     tables:
       - name: FOREX_METRICS
         description: "Foreign exchange rates data"
-        columns:
+        columns:mjj
           - name: RUN_DATE
             description: "Date of the forex metrics"
             tests:
