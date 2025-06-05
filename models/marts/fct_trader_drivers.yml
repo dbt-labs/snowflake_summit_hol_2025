@@ -1,0 +1,20 @@
+models:
+- name: fct_trader_drivers
+  description: This model provides a comprehensive analysis of trade drivers by trader,
+    including the total number of trades and the percentage contribution of each trade
+    driver. It aggregates distinct signals used in trades and calculates the percentage
+    of trades driven by each driver for individual traders.
+  columns:
+  - name: trader_name
+    description: The name of the trader associated with the trade driver statistics.
+  - name: trade_driver
+    description: The specific driver or reason behind the trades executed by the trader.
+  - name: total_trades
+    description: The total number of trades executed by the trader for a specific
+      trade driver.
+  - name: signals_used
+    description: An array of distinct signals utilized in the trades associated with
+      the trade driver.
+  - name: driver_percentage
+    description: The percentage of total trades attributed to a specific trade driver
+      for the trader.
