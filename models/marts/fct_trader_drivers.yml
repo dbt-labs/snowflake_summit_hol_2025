@@ -1,0 +1,16 @@
+models:
+  - name: fct_trader_drivers
+    columns:
+      - name: trader_name
+        data_tests:
+          - not_null
+      - name: trade_driver
+        data_tests:
+          - not_null
+      - name: total_trades
+        data_tests:
+          - not_null
+      - name: signals_used
+      - name: driver_percentage
+        data_tests:
+          - not_null
