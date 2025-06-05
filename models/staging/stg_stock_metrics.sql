@@ -21,4 +21,4 @@ renamed as (
 )
 
 select * from renamed 
-where run_date >= '2024-01-01'
+where run_date >= '2024-01-01' and TICKER is not null
