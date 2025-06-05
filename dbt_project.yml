@@ -72,3 +72,6 @@ models:
 seeds:
   schema: snowflake_summit_hol_raw
   database: analytics
+
+dbt-cloud:
+    project-id: 432998
