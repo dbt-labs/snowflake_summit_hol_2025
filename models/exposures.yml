@@ -1,0 +1,15 @@
+version: 2
+
+exposures:
+  - name: fake_exposure
+    label: fake_exposure
+    type: dashboard
+    maturity: low
+    url: https://us-east-1.online.tableau.com/#/site/lumentum/workbooks/1253622
+    description: >
+      Blah
+    owner:
+      name: Alaina Bartfeld
+      email: alaina.bartfeld@lumentum.com
+    tags:
+      - tableau_workbook
