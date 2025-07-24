@@ -5,7 +5,7 @@
 }}
 
 with source as (
-    select * from {{ source('stock_data', 'US_STOCK_METRICS') }}
+    select * from {{ source('stock_data', 'US_STOCK') }}
 ),
 
 renamed as (
