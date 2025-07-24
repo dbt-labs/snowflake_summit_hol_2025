@@ -2,10 +2,10 @@ version: 2
 
 sources:
   - name: stock_data
-    database: STOCK_TRACKING_US_STOCK_PRICES_BY_DAY
-    schema: STOCK
+    database: raw
+    schema: stock
     tables:
-      - name: US_STOCK_METRICS
+      - name: US_STOCK
         description: "US stock market trading data"
         columns:
           - name: RUN_DATE
