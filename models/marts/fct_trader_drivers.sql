@@ -15,6 +15,7 @@ trader_driver_stats as (
         trader_name,
         trade_driver,
         count(*) as total_trades,
+        -- Aggregate distinct signals used by the trader for each trade driver
         array_agg(distinct signal[0]:"answer"::string) as signals_used
     from extracted_entities
     where trade_driver is not null
